@@ -1,7 +1,18 @@
-== 目次
-
-
-
+= AsciiDoc Test
+:toc: left
+:toclevels: 6
+:toc-title: 目次
+:sectnums:
+:sectnumlevels: 6
+:sectlinks:
+:icons: font
+:example-caption: 例
+:table-caption: 表
+:figure-caption: 図
+:docname: サンプルAsciidoc
+:author: author<autho.example.com>
+:revnumber: 0.1
+:revdate: 2017/12/25
 == 概要
 
 * 箇条書き
@@ -11,7 +22,7 @@
 * 箇条書き
 
 == 構成
-
+.基本図形
 image::images/basic_shape.png[基本図形]
 
 == 機能
@@ -26,7 +37,8 @@ image::images/basic_shape.png[基本図形]
 
 === AAA
 
-```mermaid
+[mermaid]
+....
 flowchart TD
     Start --> proc1([a <- status])
     proc1 --> if1{a == 0}
@@ -34,7 +46,7 @@ flowchart TD
     if1 --no--> proc3([正常])
     proc2 --> End
     proc3 --> End
-```
+....
 
 === BBB
 
