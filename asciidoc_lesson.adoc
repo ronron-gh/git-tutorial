@@ -13,6 +13,7 @@
 :author: author<autho.example.com>
 :revnumber: 0.1
 :revdate: 2017/12/25
+
 == 概要
 
 * 箇条書き
@@ -48,9 +49,18 @@ flowchart TD
     proc3 --> End
 ....
 
+```mermaid
+flowchart TD
+    Start --> proc1([a <- status])
+    proc1 --> if1{a == 0}
+    if1 --yes--> proc2([異常])
+    if1 --no--> proc3([正常])
+    proc2 --> End
+    proc3 --> End
+```
+
 === BBB
 
 
 
 === CCC
-
