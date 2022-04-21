@@ -1,3 +1,27 @@
+
+<style>
+body {
+  counter-reset: chapternum figurenum tablenum;
+}
+
+h1 {
+  counter-reset: figurenum tablenum;
+  counter-increment: chapternum;
+}
+
+p.figure:before {
+  counter-increment: figurenum;
+  content: "図" counter(chapternum) "-" counter(figurenum) ". ";
+}
+
+
+p.table:before {
+  counter-increment: tablenum;
+  content: "表" counter(chapternum) "-" counter(tablenum) ". ";
+}
+
+</style>
+
 # 1. 目次
 
 - [1. 目次](#1-目次)
@@ -17,23 +41,23 @@
 - 箇条書き
 
 # 3. 構成
+機器構成を<a href="#ref_struct">xxx</a>に示す。
 
 ![基本図形](images/basic_shape.png "キャプションテキスト")
+<p name="ref_struct" class="figure">基本図形</p>
+
+
 
 # 4. 機能
 
+<p class="table">テーブル見本</p>
 
 |  No.  | 機能名 | 説明   | 備考 |
 | :---: | :----- | :----- | :--- |
-|   1   | AAA    | ～する |      |
+|   1   | AAA    | ～を<br>～する |      |
 |   2   | BBB    | ～する |      |
 
 
-  No.  | 機能名 | 説明   | 備考 
- :---: | :----- | :----- | :--- 
-   1   | AAA    | ～する |      
-   2   | BBB    | ～する |      
-: 機能一覧
 
 ## 4.1. AAA
 
@@ -46,7 +70,7 @@ flowchart TD
     proc2 --> End
     proc3 --> End
 ```
-
+<p class="figure">フローチャート</p>
 
 ## 4.2. BBB
 
@@ -60,6 +84,7 @@ stateDiagram-v2
 
 
 ```
+<p class="figure">状態遷移図</p>
 
 ## 4.3. CCC
 
@@ -73,3 +98,4 @@ sequenceDiagram
   B->>A: Responce
 
 ```
+<p class="figure">シーケンス図</p>
