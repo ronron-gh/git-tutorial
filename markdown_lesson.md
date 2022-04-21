@@ -1,26 +1,5 @@
 
-<style>
-body {
-  counter-reset: chapternum figurenum tablenum;
-}
-
-h1 {
-  counter-reset: figurenum tablenum;
-  counter-increment: chapternum;
-}
-
-p.figure:before {
-  counter-increment: figurenum;
-  content: "図" counter(chapternum) "-" counter(figurenum) ". ";
-}
-
-
-p.table:before {
-  counter-increment: tablenum;
-  content: "表" counter(chapternum) "-" counter(tablenum) ". ";
-}
-
-</style>
+<link href="fig_table_num.css" rel="stylesheet"></link>
 
 # 1. 目次
 
