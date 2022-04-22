@@ -1,7 +1,7 @@
 
 <link href="fig_table_num.css" rel="stylesheet"></link>
 
-<link href="https://ronron-gh.github.io/fig_table_num.css" rel="stylesheet"></link>
+<link href="https://ronron-gh.github.io/git-tutorial/fig_table_num.css" rel="stylesheet"></link>
 
 # 1. 目次
 
