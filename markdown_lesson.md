@@ -1,5 +1,5 @@
 
-<link href="fig_table_num.css" rel="stylesheet"></link>
+<link href="./fig_table_num.css" rel="stylesheet"></link>
 
 # 1. 目次
 
