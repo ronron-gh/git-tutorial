@@ -1,7 +1,9 @@
 
 <link href="fig_table_num.css" rel="stylesheet"></link>
 
-<link href="https://ronron-gh.github.io/git-tutorial/fig_table_num.css" rel="stylesheet"></link>
+<link href="https://github.com/ronron-gh/git-tutorial/blob/master/fig_table_num.css" rel="stylesheet"></link>
+
+
 
 # 1. 目次
 
@@ -22,10 +24,12 @@
 - 箇条書き
 
 # 3. 構成
-機器構成を<a href="#ref_struct">xxx</a>に示す。
+機器構成を<a href="#fig_struct">xxx</a>に示す。<br/>
+
+
 
 ![基本図形](images/basic_shape.png "キャプションテキスト")
-<p name="ref_struct" class="figure">基本図形</p>
+<p id="fig_struct" class="figure">基本図形</p>
 
 
 
